@@ -1,0 +1,1779 @@
+<!DOCTYPE html> <html>
+
+<head>
+	<title>A-Frame - Image Textures</title>
+	<script src="js/aframe-master.1.0.4.min.js"></script>
+</head>
+
+<body>
+<a-scene antialias="true">
+	
+	<a-assets>
+		<img id="sky" src="images/stars.jpg" crossorigin="anonymous" />
+		<img id="grass" src="images/grass.jpg" crossorigin="anonymous" />
+		<img id="crate" src="images/crate.jpg" crossorigin="anonymous" />
+		<img id="earth" src="images/earth-sphere.jpg" crossorigin="anonymous" />
+		<img id="hexagons" src="images/hexagons.png" crossorigin="anonymous" />
+        <img id="mcgrass" src="images/mcgrass.jpg" crossorigin="anonymous" />
+        <img id="mcsky" src="images/sky.jpg" crossorigin="anonymous" />
+        <img id="mcgrassblock" src="images/mcgrassblock.jpeg" crossorigin="anonymous" />
+        <img id="birch" src="images/birch.jpg" crossorigin="anonymous" />
+        <img id="log" src="images/log.jpg" crossorigin="anonymous" />
+        <img id="door" src="images/door.png" crossorigin="anonymous" />
+        <img id="sign" src="images/sign.png" crossorigin="anonymous" />
+        <img id="crafttable" src="images/crafttable.png" crossorigin="anonymous" />
+        <img id="bed" src="images/bed.jpg" crossorigin="anonymous" />
+        <img id="furnace" src="images/furnace.gif" crossorigin="anonymous" />
+        <img id="chest" src="images/chest.png" crossorigin="anonymous" />
+        <img id="painting" src="images/painting.jpg" crossorigin="anonymous" />
+        <img id="leaf" src="images/leaf.png" crossorigin="anonymous" />
+        <img id="cobble" src="images/cobble.png" crossorigin="anonymous" />
+        <img id="sign2" src="images/sign2.png" crossorigin="anonymous" />
+        <img id="sign3" src="images/sign3.png" crossorigin="anonymous" />
+        <img id="sign4" src="images/sign4.png" crossorigin="anonymous" />
+        <img id="sign5" src="images/sign5.png" crossorigin="anonymous" />
+        <img id="sign6" src="images/sign6.png" crossorigin="anonymous" />
+        <img id="sign7" src="images/sign7.png" crossorigin="anonymous" />
+        <img id="sign8" src="images/sign8.png" crossorigin="anonymous" />
+        <img id="sign9" src="images/sign9.png" crossorigin="anonymous" />
+        <img id="sign10" src="images/sign10.png" crossorigin="anonymous" />
+	</a-assets>
+
+    
+    <a-entity id="rig" position="0 -1.3 0.7">
+        <a-camera id="camera"></a-camera>
+    </a-entity>
+  
+		
+	<a-sky 
+		color = "#FFFFFF"
+		material = "src: #mcsky">
+	</a-sky>
+
+	<a-plane
+		width="16" height="16"
+		position=" 0.00 0.00 0.00" 
+		rotation="-90 0 0" 
+		color="#888888"
+		material="src: #mcgrass; repeat:100 100; transparent: true; opacity: 1"
+		shadow="cast: false; receive: true">
+	</a-plane>
+	
+    
+<!-- birch plank with sign behind -->
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "0 .1 1"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #birch"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "0.2 .1 1"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #birch"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "0.4 .1 1"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #birch"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "0.6 .1 1"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #birch"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "0.8 .1 1"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #birch"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "1 .1 1"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #birch"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "-0.2 .1 1"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #birch"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "-0.4 .1 1"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #birch"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "-0.6 .1 1"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #birch"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "-0.8 .1 1"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #birch"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "-1 .1 1"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #birch"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <!-- cobble sign layer 2-->
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "0 .3 1"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #cobble"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "0.2 .3 1"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #cobble"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "0.4 .3 1"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #cobble"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "0.6 .3 1"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #cobble"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "0.8 .3 1"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #cobble"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "1 .3 1"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #cobble"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "-0.2 .3 1"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #cobble"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "-0.4 .3 1"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #cobble"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "-0.6 .3 1"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #cobble"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "-0.8 .3 1"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #cobble"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "-1 .3 1"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #cobble"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <!-- plank 3rd layer!!! blockade -->
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "0 .5 1"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #birch"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <!--sign on block-->
+    <a-box
+		width = ".2" height = ".1" depth = ".01"
+		position = "0 .3 0.899"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #sign2"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "0.2 .5 1"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #birch"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "0.4 .5 1"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #birch"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "0.6 .5 1"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #birch"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "0.8 .5 1"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #birch"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "1 .5 1"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #birch"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "-0.2 .5 1"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #birch"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "-0.4 .5 1"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #birch"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "-0.6 .5 1"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #birch"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "-0.8 .5 1"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #birch"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "-1 .5 1"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #birch"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    
+<!-- house -->
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "-.6 .1 -1"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #log"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "-.6 .1 -1.2"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #birch"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "-.6 .1 -1.4"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #birch"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "-.6 .1 -1.6"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #birch"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "-.6 .1 -1.8"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #birch"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "-.6 .1 -2"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #birch"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "-.4 .1 -1"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #birch"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "-.2 .1 -1"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #birch"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "-.4 .1 -2"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #birch"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "-.2 .1 -2"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #birch"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "0 .1 -2"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #birch"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <!-- flip-->
+    <!-- corner:)-->
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = ".6 .1 -1"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #log"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = ".6 .1 -1.2"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #birch"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = ".6 .1 -1.4"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #birch"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = ".6 .1 -1.6"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #birch"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = ".6 .1 -1.8"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #birch"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = ".6 .1 -2"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #birch"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = ".4 .1 -2"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #birch"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = ".2 .1 -2"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #birch"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = ".4 .1 -1"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #birch"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = ".2 .1 -1"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #birch"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+<!-- layer 2 -->
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "-.6 .3 -1"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #log"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "-.6 .3 -1.2"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #birch"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "-.6 .3 -1.4"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #birch"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "-.6 .3 -1.6"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #birch"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "-.6 .3 -1.8"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #birch"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "-.6 .3 -2"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #birch"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "-.4 .3 -1"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #birch"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "-.2 .3 -1"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #birch"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "-.4 .3 -2"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #birch"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "-.2 .3 -2"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #birch"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "0 .3 -2"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #birch"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <!-- flip2-->
+    <!-- corner below-->
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = ".6 .3 -1"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #log"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = ".6 .3 -1.2"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #birch"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = ".6 .3 -1.4"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #birch"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = ".6 .3 -1.6"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #birch"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = ".6 .3 -1.8"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #birch"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = ".6 .3 -2"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #birch"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = ".4 .3 -2"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #birch"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = ".2 .3 -2"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #birch"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = ".4 .3 -1"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #birch"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = ".2 .3 -1"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #birch"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <!-- door :) -->
+    <a-box
+		width = ".2" height = ".4" depth = ".1"
+		position = "0 -1 -0.97"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #door"
+		shadow = "cast: true; receive: true">
+	</a-box>
+	
+	
+    <!-- layer 3 -->
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "-.6 .5 -1"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #log"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "-.6 .5 -1.2"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #birch"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "-.6 .5 -1.4"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #birch"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "-.6 .5 -1.6"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #birch"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "-.6 .5 -1.8"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #birch"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "-.6 .5 -2"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #birch"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "-.4 .5 -1"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #birch"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "-.2 .5 -1"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #birch"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "0 .5 -1"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #birch"
+		shadow = "cast: true; receive: true">
+	</a-box>
+        
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "-.4 .5 -2"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #birch"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "-.2 .5 -2"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #birch"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "0 .5 -2"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #birch"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <!-- flip3-->
+    <!-- corner below-->
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = ".6 .5 -1"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #log"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = ".6 .5 -1.2"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #birch"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = ".6 .5 -1.4"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #birch"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = ".6 .5 -1.6"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #birch"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = ".6 .5 -1.8"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #birch"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = ".6 .5 -2"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #birch"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = ".4 .5 -2"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #birch"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = ".2 .5 -2"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #birch"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = ".4 .5 -1"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #birch"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = ".2 .5 -1"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #birch"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <!-- roof -->
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = ".4 .5 -1.2"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #birch"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = ".4 .5 -1.4"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #birch"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = ".4 .5 -1.6"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #birch"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = ".4 .5 -1.8"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #birch"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <!-- roof 2 -->
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = ".2 .5 -1.4"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #birch"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = ".2 .5 -1.2"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #birch"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = ".2 .5 -1.6"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #birch"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = ".2 .5 -1.8"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #birch"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <!-- roof 3 -->
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "0 .5 -1.4"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #birch"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "0 .5 -1.2"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #birch"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "0 .5 -1.6"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #birch"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "0 .5 -1.8"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #birch"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <!-- roof 4 -->
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "-.2 .5 -1.4"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #birch"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "-.2 .5 -1.2"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #birch"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "-.2 .5 -1.6"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #birch"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "-.2 .5 -1.8"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #birch"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <!-- roof 5 -->
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "-.4 .5 -1.4"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #birch"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "-.4 .5 -1.2"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #birch"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "-.4 .5 -1.6"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #birch"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "-.4 .5 -1.8"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #birch"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <!-- door :) and sign and back sign! -->
+    <a-box
+		width = ".2" height = ".4" depth = ".1"
+		position = "0 .2 -0.97"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #door"
+		shadow = "cast: true; receive: true">
+	</a-box>
+        
+    <a-box
+		width = ".2" height = ".1" depth = ".01"
+		position = ".2 .3 -.9"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #sign"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".1" depth = ".01"
+		position = "-.6 .1 -2.1"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #sign10"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <!-- interior-->
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "-.4 .1 -1.8"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #crafttable"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".08" depth = ".4"
+		position = ".4 .04 -1.7"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #bed"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "-.4 .1 -1.6"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #furnace"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "-.4 .3 -1.6"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #furnace"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "-.4 .1 -1.4"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #chest"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".1" height = ".2" depth = ".2"
+		position = ".545 .3 -1.4"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #painting"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".1" depth = ".01"
+		position = "0 .3 -1.899"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #sign3"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".01" height = ".1" depth = ".2"
+		position = "-.499 .3 -1.8"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #sign4"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".01" height = ".1" depth = ".2"
+		position = "-.499 .3 -1.4"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #sign5"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".01" depth = ".1"
+		position = "-.4 .2 -1.8"
+		rotation = "0 90 0"  
+		color = "#FFFFFF"
+		material = "src: #sign6"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".01" height = ".1" depth = ".2"
+		position = ".499 .3 -1.8"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #sign7"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <!-- tree-->
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "-1.2 .1 -.2"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #log"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "-1.2 .3 -.2"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #log"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".1" depth = ".01"
+		position = "-1.2 .3 -.3"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #sign8"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <!-- 3 layer-->
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "-1.2 .5 -.2"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #log"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "-1.2 .5 0" 
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #leaf"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "-1.2 .5 -.4" 
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #leaf"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "-1.4 .5 -.2" 
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #leaf"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "-1 .5 -.2" 
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #leaf"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "-1 .5 -.4" 
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #leaf"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "-1 .5 0" 
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #leaf"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "-1.4 .5 0" 
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #leaf"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "-1.4 .5 -.4" 
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #leaf"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    
+    
+    <!-- 4 layer -->
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "-1.2 .7 -.2"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #log"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "-1.2 .7 0" 
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #leaf"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "-1.2 .7 -.4" 
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #leaf"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "-1.4 .7 -.2" 
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #leaf"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "-1 .7 -.2" 
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #leaf"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "-1 .7 -.4" 
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #leaf"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "-1 .7 0" 
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #leaf"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "-1.4 .7 0" 
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #leaf"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "-1.4 .7 -.4" 
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #leaf"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <!-- top layer -->
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "-1.2 .9 -.2" 
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #leaf"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "-1.2 .9 0" 
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #leaf"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "-1.2 .9 -.4" 
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #leaf"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "-1.4 .9 -.2" 
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #leaf"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "-1 .9 -.2" 
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #leaf"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <!-- tree2!!!!-->
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "1.2 .1 -.2"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #log"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "1.2 .3 -.2"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #log"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".01" height = ".1" depth = ".2"
+		position = "1.2999 .3 -.2"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #sign9"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <!-- 3 layer-->
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "1.2 .5 -.2"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #log"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "1.2 .5 0" 
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #leaf"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "1.2 .5 -.4" 
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #leaf"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "1.4 .5 -.2" 
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #leaf"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "1 .5 -.2" 
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #leaf"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "1 .5 -.4" 
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #leaf"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "1 .5 0" 
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #leaf"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "1.4 .5 0" 
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #leaf"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "1.4 .5 -.4" 
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #leaf"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    
+    
+    <!-- 4 layer -->
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "1.2 .7 -.2"
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #log"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "1.2 .7 0" 
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #leaf"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "1.2 .7 -.4" 
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #leaf"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "1.4 .7 -.2" 
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #leaf"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "1 .7 -.2" 
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #leaf"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "1 .7 -.4" 
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #leaf"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "1 .7 0" 
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #leaf"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "1.4 .7 0" 
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #leaf"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "1.4 .7 -.4" 
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #leaf"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <!-- top layer -->
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "1.2 .9 -.2" 
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #leaf"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "1.2 .9 0" 
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #leaf"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "1.2 .9 -.4" 
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #leaf"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "1.4 .9 -.2" 
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #leaf"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+    <a-box
+		width = ".2" height = ".2" depth = ".2"
+		position = "1 .9 -.2" 
+		rotation = "0 0 0"  
+		color = "#FFFFFF"
+		material = "src: #leaf"
+		shadow = "cast: true; receive: true">
+	</a-box>
+    
+	
+</a-scene>
+</body>
+</html>
