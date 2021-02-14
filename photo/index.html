@@ -1,0 +1,129 @@
+<!DOCTYPE html> <html>
+
+<head>
+	<title>A-Frame - 360 Photo!</title>
+	<script src="js/aframe-master.1.0.4.min.js"></script>
+</head>
+
+<body>
+    
+<script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+<script src="https://unpkg.com/aframe-event-set-component@3.0.3/dist/aframe-event-set-component.min.js"></script>
+    
+<a-scene antialias="true">
+	
+	<a-assets>
+		<img id="main" src="images/main.jpg" crossorigin="anonymous" />
+        <img id="park" src="images/park.jpg" crossorigin="anonymous" />
+        <img id="ts" src="images/ts.jpg" crossorigin="anonymous" />
+        <img id="shops" src="images/shops.jpg" crossorigin="anonymous" />
+        <img id="room" src="images/room.jpg" crossorigin="anonymous" />
+        <!-- signs below-->
+        <img id="sign1" src="images/sign1.png" crossorigin="anonymous" />
+        <img id="sign2" src="images/sign2.png" crossorigin="anonymous" />
+        <img id="sign3" src="images/sign3.png" crossorigin="anonymous" />
+        <img id="sign4" src="images/sign4.png" crossorigin="anonymous" />
+        <img id="sign5" src="images/sign5.png" crossorigin="anonymous" />
+	</a-assets>
+
+    
+    <a-entity id="rig" position="0 0 0" rotation=" 0 0 0">
+        <a-camera id="camera">
+            <a-cursor></a-cursor>
+        </a-camera>
+    </a-entity>
+		
+	<a-sky 
+		color = "#a3d4c3"
+		material = "src:#main">
+	</a-sky>
+
+<!-- BOXES-->
+    
+    <!-- back to main! box-->
+    <a-box
+        position="0 6 0"
+        scale=".5 .5 .5"     
+        rotation="5 5 -20"
+        event-set__enter="_event: mouseenter; _target: a-sky; material.src: #main">
+    </a-box> 
+    <a-box
+        position="-0 -2 0"
+        scale=".5 .5 .5"     
+        rotation="5 5 -20"
+        event-set__enter="_event: mouseenter; _target: a-sky; material.src: #main">
+    </a-box> 
+    
+    <!-- to times square! box-->
+    <a-box
+        position="-6 2 2.5"
+        scale=".5 .5 .5"     
+        rotation="0 -70"
+        event-set__enter="_event: mouseenter; _target: a-sky; material.src: #ts">
+    </a-box>
+    
+    <a-box
+        position="-6 2.8 2.55"
+        scale="2.7 .7 0"     
+        rotation="0 -70"
+        material="src:#sign5">
+    </a-box> 
+    
+    <!-- to the park! box-->
+    <a-box
+        position="5 .5 -1.5"
+        scale=".5 .5 .5"     
+        rotation="0 -70"
+        event-set__enter="_event: mouseenter; _target: a-sky; material.src: #park"
+        color= white>
+    </a-box>  
+    
+    <a-box
+        position="5 1.3 -1.5"
+        scale="2.3 .5 0"     
+        rotation="0 -70"
+        material="src:#sign3">
+    </a-box>  
+    
+    <!-- to your room! box-->
+    <a-box
+        position="-2.6 2.5 -9"
+        scale="1 1 1"     
+        rotation="15 15 0"
+        event-set__enter="_event: mouseenter; _target: a-sky; material.src: #room">
+    </a-box> 
+    
+    <a-plane
+        position="-2.6 4 -9"
+        scale="3 .75 .5"     
+        rotation="15 15 0"
+        material="src:#sign2">
+    </a-plane> 
+    
+    <!-- to little italy! box-->
+    <a-box
+        position="-.4 1.8 7"
+        scale=".7 .7 .7"     
+        rotation="5 -15 0"
+        event-set__enter="_event: mouseenter; _target: a-sky; material.src: #shops">
+    </a-box>
+    
+    <a-box
+        position="-.4 3 7"
+        scale="3 .7 0"     
+        rotation="0 0 0"
+        material="src:#sign4">
+    </a-box>
+    
+    
+    <!-- sign-->
+    <a-plane
+        position="5 2.5 -10"
+        scale="8 3 1"     
+        rotation="10 -35"
+        material="src:#sign1">
+    </a-plane>
+    
+</a-scene>
+</body>
+</html>
